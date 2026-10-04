@@ -12,7 +12,9 @@ public class Main {
         //Pada baris ini awalnya terjadi error karena atribut sebelumnya bertipe char (padahal data yang dimasukkan bertipe teks)
         e.origin = "Kingdom of Orvel";
         e.setRole("Assasin");
-        e.age = 17;
+
+        //Pada baris ini output tidak sesuai karena nilai age belum diisi dan hasilnya 0
+        e.age =17;
 
         System.out.println("Nama: " + e.getName());
         System.out.println("Asal: " + e.getOrigin());

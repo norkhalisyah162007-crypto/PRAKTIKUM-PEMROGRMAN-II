@@ -14,7 +14,7 @@ public class Main {
         e.setRole("Assasin");
 
         //Pada baris ini output tidak sesuai karena nilai age belum diisi dan hasilnya 0
-        e.age =17;
+        e.age = 17;
 
         System.out.println("Nama: " + e.getName());
         System.out.println("Asal: " + e.getOrigin());

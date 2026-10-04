@@ -1,24 +1,53 @@
 package module02.problem03;
 
-public class Main {
-    public static void main(String[] args) {
+//Pada baris ini terjadi error karena nama class yang digunakan tidak sesuai dengan nama file yang disimpan (Employee.java)
+//public class Pegawai {
+public class Employee {
+    public String name;
 
-        Employee e = new Employee();
+    //Pada baris ini akan terjadi error ketika data yang diminta seharusnya bertipe String (teks) sedangkan pada atribut bertipe char (karakter tunggal)
+    //public char origin;
+    public String origin;
+    public String role;
+    public int age;
 
-        //Pada baris ini terjadi error karena kurang titik koma diakhir (;)
-        //e.name = "Roi"
-        e.name = "Roi";
+    public String getName() {
+        return name;
+    }
 
-        //Pada baris ini awalnya terjadi error karena atribut sebelumnya bertipe char (padahal data yang dimasukkan bertipe teks)
-        e.origin = "Kingdom of Orvel";
-        e.setRole("Assasin");
+    public String getOrigin() {
+        return origin;
+    }
 
-        //Pada baris ini output tidak sesuai karena nilai age belum diisi dan hasilnya 0
-        e.age =17;
+    //Pada baris ini terjadi error karena method setRole() tidak memiliki paramater (String r)
+    //public void setRole() {
+    public void setRole(String r) {
+        this.role = r;
+    }
+}package module02.problem03;
 
-        System.out.println("Nama: " + e.getName());
-        System.out.println("Asal: " + e.getOrigin());
-        System.out.println("Jabatan: " + e.role);
-        System.out.println("Umur: " + e.age + " tahun");
+//Pada baris ini terjadi error karena nama class yang digunakan tidak sesuai dengan nama file yang disimpan (Employee.java)
+//public class Pegawai {
+public class Employee {
+    public String name;
+
+    //Pada baris ini akan terjadi error ketika data yang diminta seharusnya bertipe String (teks) sedangkan pada atribut bertipe char (karakter tunggal)
+    //public char origin;
+    public String origin;
+    public String role;
+    public int age;
+
+    public String getName() {
+        return name;
+    }
+
+    public String getOrigin() {
+        return origin;
+    }
+
+    //Pada baris ini terjadi error karena method setRole() tidak memiliki paramater (String r)
+    //public void setRole() {
+    public void setRole(String r) {
+        this.role = r;
     }
 }

@@ -1,27 +1,24 @@
 package module02.problem03;
 
-//Pada baris ini terjadi error karena nama class yang digunakan tidak sesuai dengan nama file yang disimpan (Employee.java)
-//public class Pegawai {
-public class Employee {
-    public String name;
+public class Main {
+    public static void main(String[] args) {
 
-    //Pada baris ini akan terjadi error ketika data yang diminta seharusnya bertipe String (teks) sedangkan pada atribut bertipe char (karakter tunggal)
-    //public char origin;
-    public String origin;
-    public String role;
-    public int age;
+        Employee e = new Employee();
 
-    public String getName() {
-        return name;
-    }
+        //Pada baris ini terjadi error karena kurang titik koma diakhir (;)
+        //e.name = "Roi"
+        e.name = "Roi";
 
-    public String getOrigin() {
-        return origin;
-    }
+        //Pada baris ini awalnya terjadi error karena atribut sebelumnya bertipe char (padahal data yang dimasukkan bertipe teks)
+        e.origin = "Kingdom of Orvel";
+        e.setRole("Assasin");
 
-    //Pada baris ini terjadi error karena method setRole() tidak memiliki paramater (String r)
-    //public void setRole() {
-    public void setRole(String r) {
-        this.role = r;
+        //Pada baris ini output tidak sesuai karena nilai age belum diisi dan hasilnya 0
+        e.age =17;
+
+        System.out.println("Nama: " + e.getName());
+        System.out.println("Asal: " + e.getOrigin());
+        System.out.println("Jabatan: " + e.role);
+        System.out.println("Umur: " + e.age + " tahun");
     }
 }
